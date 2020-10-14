@@ -6,6 +6,7 @@ var paper,ground,dustbinpart1,dustbinpart2,dustbinpart3, dustbin;
 
 function preload() {
 	dustbinImg = loadImage("Dustbin.png")
+	paperImg = loadImage("Paper.png")
 }
 
 function setup() {
@@ -20,6 +21,9 @@ function setup() {
 
 
 paper = new Paper(200,80,50);
+
+papaerImage = createSprite (paper, paper, paper,paper)
+paper.addImage(paperImg)
 
 
 dustbinpart1 = new Bin(690,643,110,10);
